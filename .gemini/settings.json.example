@@ -1,0 +1,75 @@
+{
+  "general": {
+    "defaultApprovalMode": "auto_edit"
+  },
+  "hooksConfig": {
+    "disabled": [
+      "omg-quota-watch-after-agent"
+    ]
+  },
+  "mcpServers": {
+    "gemini-obsidian": {
+      "command": "node",
+      "args": [
+        "path/to/gemini-obsidian/dist/index.js"
+      ],
+      "env": {
+        "OBSIDIAN_API_KEY": "YOUR_OBSIDIAN_REST_API_KEY"
+      }
+    },
+    "context7": {
+      "httpUrl": "https://mcp.context7.com/mcp",
+      "headers": {
+        "CONTEXT7_API_KEY": "YOUR_CONTEXT7_API_KEY"
+      }
+    },
+    "chrome-devtools-mcp": {
+      "command": "npx",
+      "args": [
+        "chrome-devtools-mcp@latest"
+      ]
+    },
+    "firecrawl": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "firecrawl-mcp"
+      ],
+      "env": {
+        "FIRECRAWL_API_KEY": "YOUR_FIRECRAWL_API_KEY"
+      }
+    },
+    "alphavantage": {
+      "url": "https://mcp.alphavantage.co/mcp?apikey=YOUR_ALPHAVANTAGE_KEY",
+      "type": "http"
+    },
+    "github-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "YOUR_GITHUB_PAT"
+      }
+    },
+    "linkedin": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--project",
+        "./.mcp/linkedin-mcp-server",
+        "-m",
+        "linkedin_mcp_server"
+      ]
+    },
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@playwright/mcp",
+        "--headless"
+      ]
+    }
+  }
+}

@@ -1,0 +1,14 @@
+# Startup Automation Policy
+# Silently allows reading agent profiles and communication logs
+
+[[rule]]
+toolName = "read_file"
+argsPattern = '"file_path":\s*".*(Core/Agents/|Nexus/)'
+decision = "allow"
+priority = 100
+
+[[rule]]
+mcpName = "gemini-obsidian"
+toolName = "obsidian_set_vault"
+decision = "allow"
+priority = 100

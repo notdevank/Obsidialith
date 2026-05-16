@@ -1,0 +1,63 @@
+# Obsidialith .gitignore
+# Purpose: Ship system structure, templates, and agent definitions. 
+# Exclude all personal data, logs, and sensitive configurations.
+
+# --- User Data & Content ---
+Active/**
+Archive/**
+Inbox/**
+Nexus/**
+!*/.gitkeep
+!*/_index.md
+
+# --- System Logs & Private Logic ---
+System/Finance/**
+System/Logs/**
+System/Career Data/**
+System/Assets/**
+!System/Assets/logo.png
+System/Excalidraw/**
+System/expense_organizer.py
+System/local_organizer.py
+System/opencode.json
+!System/Finance/.gitkeep
+!System/Logs/.gitkeep
+!System/Career Data/.gitkeep
+
+# --- Specific File Exclusions ---
+System/Obsidialith_Complete_Setup_Guide.pdf
+System/Obsidialith_Master_Manual_v2.pdf
+System/Obsidialith_Master_Setup_Guide.pdf
+System/Obsidialith Dashboard.canvas
+System/Agent_World_Design.md
+System/vault_icon.png
+drone-delivery-flowchart.excalidraw
+NCore/Agents/Agent Idea.md
+
+# --- Sensitive Configurations ---
+.env*
+.gemini/settings.json
+System/gemini_key.txt
+.obsidian/plugins/**/data.json
+
+# --- External Tools & Environments ---
+.mcp/
+node_modules/
+.venv/
+__pycache__/
+*.log
+
+# --- OS & Misc ---
+.DS_Store
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.gemini/tmp/**
+! .gemini/tmp/.gitkeep
+
+# --- Agent Sub-Configurations ---
+NCore/Agents/Iola_Design_Library/**
+NCore/Agents/ChatGPT_MD/**
+NCore/Agents/Protocols/rag-anything/**
+!NCore/Agents/Iola_Design_Library/.gitkeep
+!NCore/Agents/ChatGPT_MD/.gitkeep
+!NCore/Agents/Protocols/rag-anything/.gitkeep

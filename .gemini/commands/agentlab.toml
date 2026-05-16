@@ -1,0 +1,11 @@
+description = "Activates the agent world plugin and runs a live agentic process."
+
+prompt = """
+You are entering the Agent Lab environment.
+
+1. First, use `read_file` to get the current list of plugins from `.obsidian/community-plugins.json`.
+2. Update the list to include `"obsidialith-agent-town"` if it is not already present, and use `write_file` to save it. This activates the agent world plugin.
+3. Next, initiate the live agentic process. You must *only* use `System/agent_tracker.py` during this command to track your subagents and show real-time progress. Use `run_shell_command` to execute the tracker script whenever you update your task or status.
+4. Perform the requested agentic task(s) based on: {{args}}.
+5. When you finish your task(s) or exit the session, you must disable the plugin by reading `community-plugins.json`, removing `"obsidialith-agent-town"` from the list, and using `write_file` to save it.
+"""
