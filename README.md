@@ -1,20 +1,23 @@
 # Obsidialith
 
+<p align="center">
+  <img src="System/Assets/logo.png" width="200" alt="Obsidialith Logo">
+</p>
+
 Turn Obsidian into an agentic execution environment where AI systems manage knowledge, projects, and workflows collaboratively.
 
-Obsidialith is a framework that adds a structural and agentic layer to your Obsidian vault. It utilizes a council of specialized AI agents to automate research, architecture, implementation, and operations directly within your files.
+Obsidialith is a framework that adds a structural and agentic layer to your Obsidian vault. It utilizes a council of specialized AI agents to automate tasks directly within your files.
 
 ---
 
 ## Core Features
 
-- Multi-Agent Orchestration: Coordinate nine specialized agent profiles to manage different domains of your digital life and work.
-- MCP Tool Integration: Built-in support for Model Context Protocol, enabling agents to use tools like web search, GitHub, Google Workspace, and specialized engineering APIs.
-- Visual Strategy Mandate: Integrated use of Obsidian Canvas as a "Visual Root" for all projects, ensuring architectural clarity before implementation.
-- Automated Knowledge Promotion: System protocols for elevating project-level insights into a permanent, global knowledge network (The Nexus).
-- Standardized Operational Protocols: Pre-defined mandates for session logging, project initialization, and structural hygiene.
-- Collaborative Workflows: Formalized "Strategy-to-Ship" pipelines where agents pass tasks and context between each other (e.g., Vision -> Design -> Engineering).
-- Privacy-First Environment: Operates entirely within your local markdown files, maintaining full user control over data and identity.
+- Multi-Agent Orchestration: Coordinate nine specialized agents to automate different domains of your work.
+- MCP Integration: Agents use the Model Context Protocol to access the web, GitHub, and local system tools.
+- Visual Strategy: Mandatory use of Obsidian Canvas to map project architecture before implementation.
+- Automated Knowledge Linking: Insights from active projects are automatically promoted to a global knowledge network.
+- Standardized Protocols: Built-in rules for session logging and vault hygiene.
+- Privacy-First: All operations and data remain within your local markdown files.
 
 ---
 
@@ -28,40 +31,35 @@ Obsidialith is a framework that adds a structural and agentic layer to your Obsi
 
 ## Option 1: Automated Setup (Recommended)
 
-This path allows Gemini to automatically install required MCP servers and activate Agent Skills.
-
 1. Clone this repository into your Obsidian vault directory:
    ```bash
    git clone https://github.com/notdevank/Obsidialith.git
    ```
-2. Initialize the system and tools:
+2. Run the initialization command:
    ```bash
-   gemini "Initialize the system by reading the setup protocol in System/Protocols/Setup.md"
+   gemini "Initialize the system using the protocol in System/Protocols/Setup.md"
    ```
-   *The agent will automatically handle MCP server installations, environment configuration, and Skill validation.*
+   *The agent will verify your plugins, set up your .env and settings.json files, and validate your tools.*
 
 ---
 
 ## Option 2: Manual Setup
 
-Use this path for granular control over the installation of MCP servers and Agent Skills.
-
 1. Clone this repository:
    ```bash
    git clone https://github.com/notdevank/Obsidialith.git
    ```
-2. Skill Environment Configuration:
+2. Set up environment:
    ```bash
    cp .env.example .env
-   # Add your Gemini, Firecrawl (Research Skill), and GitHub (Ops Skill) keys
+   # Add your API keys (Gemini, Firecrawl, GitHub) to .env
    ```
-3. MCP Server Configuration:
+3. Configure agents:
    ```bash
    cp .gemini/settings.json.example .gemini/settings.json
-   # Install required MCP packages (npm install -g firecrawl-mcp, etc.)
-   # Update paths in settings.json to match your local installation
+   # Update paths to your local MCP servers in settings.json
    ```
-4. Skill Verification:
+4. Verify skills:
    ```bash
    gemini --list-tools
    ```
@@ -88,11 +86,11 @@ The system is managed by specialized agents, each with a dedicated technical too
 
 ## System Structure
 
-- Inbox: Capture point for raw data and unstructured inputs.
-- Active: Working memory for high-momentum projects and trajectories.
-- Nexus: Permanent, synaptic knowledge network and long-term memory.
-- NCore: Core logic containing agent neural profiles and system protocols.
-- System: Infrastructure providing templates, logs, and automation tools.
+- Inbox: Entry point for raw captures and data.
+- Active: Where ongoing projects and work-streams live.
+- Nexus: Permanent, linked knowledge base.
+- NCore: Logic and instructions for the agent council.
+- System: Infrastructure, templates, and automation scripts.
 
 ---
 

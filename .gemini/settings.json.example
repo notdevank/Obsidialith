@@ -17,18 +17,6 @@
         "OBSIDIAN_API_KEY": "YOUR_OBSIDIAN_REST_API_KEY"
       }
     },
-    "context7": {
-      "httpUrl": "https://mcp.context7.com/mcp",
-      "headers": {
-        "CONTEXT7_API_KEY": "YOUR_CONTEXT7_API_KEY"
-      }
-    },
-    "chrome-devtools-mcp": {
-      "command": "npx",
-      "args": [
-        "chrome-devtools-mcp@latest"
-      ]
-    },
     "firecrawl": {
       "command": "npx",
       "args": [
@@ -38,10 +26,6 @@
       "env": {
         "FIRECRAWL_API_KEY": "YOUR_FIRECRAWL_API_KEY"
       }
-    },
-    "alphavantage": {
-      "url": "https://mcp.alphavantage.co/mcp?apikey=YOUR_ALPHAVANTAGE_KEY",
-      "type": "http"
     },
     "github-mcp": {
       "command": "npx",
@@ -53,14 +37,18 @@
         "GITHUB_PERSONAL_ACCESS_TOKEN": "YOUR_GITHUB_PAT"
       }
     },
-    "linkedin": {
-      "command": "uv",
+    "google-workspace": {
+      "command": "npx",
       "args": [
-        "run",
-        "--project",
-        "./.mcp/linkedin-mcp-server",
-        "-m",
-        "linkedin_mcp_server"
+        "-y",
+        "@modelcontextprotocol/server-google-workspace"
+      ]
+    },
+    "chrome-devtools-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "chrome-devtools-mcp@latest"
       ]
     },
     "playwright": {
@@ -69,6 +57,99 @@
         "-y",
         "@playwright/mcp",
         "--headless"
+      ]
+    },
+    "context7": {
+      "httpUrl": "https://mcp.context7.com/mcp",
+      "headers": {
+        "CONTEXT7_API_KEY": "YOUR_CONTEXT7_API_KEY"
+      }
+    },
+    "alphavantage": {
+      "url": "https://mcp.alphavantage.co/mcp?apikey=YOUR_ALPHAVANTAGE_KEY",
+      "type": "http"
+    },
+    "langsearch": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "langsearch-mcp"
+      ],
+      "env": {
+        "LANGSEARCH_API_KEY": "YOUR_LANGSEARCH_API_KEY"
+      }
+    },
+    "rag-anything": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "rag-anything-mcp"
+      ]
+    },
+    "genkit": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "genkit-mcp"
+      ]
+    },
+    "supabase": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "supabase-mcp"
+      ],
+      "env": {
+        "SUPABASE_URL": "YOUR_SUPABASE_URL",
+        "SUPABASE_SERVICE_ROLE_KEY": "YOUR_SUPABASE_KEY"
+      }
+    },
+    "stitch": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "stitch-mcp"
+      ],
+      "env": {
+        "STITCH_API_KEY": "YOUR_STITCH_API_KEY"
+      }
+    },
+    "design-skills": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "design-skills-mcp"
+      ]
+    },
+    "growth-skills": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "growth-skills-mcp"
+      ]
+    },
+    "personal-skills": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "personal-skills-mcp"
+      ]
+    },
+    "twitter": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "twitter-automation-mcp"
+      ],
+      "env": {
+        "TWITTER_API_KEY": "YOUR_TWITTER_KEY"
+      }
+    },
+    "file-tools": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "file-tools-mcp"
       ]
     }
   }
