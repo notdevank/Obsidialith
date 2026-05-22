@@ -40,6 +40,7 @@ Obsidialith is a framework that adds a structural and agentic layer to your Obsi
    gemini "Initialize the system using the protocol in System/Protocols/Setup.md"
    ```
    *The agent will verify your plugins, set up your .env and settings.json files, and validate your tools. It can take some time and may get stuck so please restart the installation in that case*
+   *After the installation make sure that the workspace directory is Obsidialith only*
 
 ---
 
